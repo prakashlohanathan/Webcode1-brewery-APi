@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+
+  font-size: 62.5%;
+
+}
+
+body{
+  color: white;
+  background-color: black;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container h1{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 5rem;
+}
+
+.container input{
+  margin-top: 5rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.2rem solid #fff;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.container label{
+  text-transform: capitalize;
+  position: relative;
+  top:-3rem;
+  left: 0;
+  font-size: 1.25rem;
+  transition: .6s;
+}
+
+.container input:focus~label,
+.container input:valid~label{
+  top: -6rem;
+  letter-spacing: .3rem;
+  font-weight: 500;
+  pointer-events: none;
+  color: cornflowerblue;
+}
+
+.submit{
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  margin-top: 4rem;
+  color: azure;
+  padding: 1rem 1rem;
+  background-color: black;
+  font-size: 1.5rem;
+  transition: color 1.5s, background-color 1.5s;
+  margin-bottom: 4rem;
+}
+
+.submit:hover,
+.submit:active{
+  background-color: azure;
+  color: black;
+}
+
+.content-parent {
+  border: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.items{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.items a:link, .items a:visited{
+  text-decoration: none;
+  color: dodgerblue;
+}
+
+.items a:hover, .items a:focus{
+  color: crimson;
+  text-decoration:  underline;
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+  .container h1{
+    font-size: 7rem;
+    margin-top: 5rem;
+  }
+  .container input{
+    width: 50%;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+  }
+  .container label{
+   font-size: 2rem;
+   top: -4rem;
+   left: 0;
+   font-weight: 500;
+  }
+  .container input:focus~label,
+  .container input:valid~label{
+    top: -8rem;
+    letter-spacing: .8rem;
+    font-weight: 700;
+  }
+  .submit{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .data_area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .items{
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1439px) {
+
+  .container h1{
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    margin-top: 5rem;
+  }
+  .container input{
+    font-size: 3rem;
+    width: 50%;
+    border-bottom: 0.5rem solid #fff;
+    letter-spacing: .4rem;
+  }
+  .container label{
+   font-size: 3rem;
+   top: -5rem;
+   left: 0;
+   font-weight: 500;
+  }
+  .container input:focus~label,
+  .container input:valid~label{
+    top: -10rem;
+    letter-spacing: 1rem;
+    font-weight: 900;
+  }
+  .submit{
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .data_area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .items{
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width:1600px) {
+
+  .container h1{
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    margin-top: 5rem;
+  }
+  .container input{
+    font-size: 3rem;
+    width: 50%;
+    border-bottom: 0.5rem solid #fff;
+    letter-spacing: .4rem;
+  }
+  .container label{
+   font-size: 3rem;
+   top: -5rem;
+   left: 0;
+   font-weight: 500;
+  }
+  .container input:focus~label,
+  .container input:valid~label{
+    top: -10rem;
+    letter-spacing: 1rem;
+    font-weight: 900;
+  }
+  .submit{
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .data_area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+  .items{
+    font-size: 2rem;
+  }
+
+}
+
+#brewerytype {
+  background-color: rgb(246, 240, 240); 
+  border-radius: 7%;
+} 

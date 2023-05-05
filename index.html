@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Open Brewery API</title>
+  </head>
+  <body>
+
+    <label for="state">Show Brewery US State:</label>
+<select id="brewerytype">
+
+  <option value="">All US State</option>
+  <option value="">Oklahoma</option>
+  <option value="">Nevada</option>
+  <option value="">California</option>
+  <option value="">Alabama</option>
+  <option value="">Alaska</option>
+  <option value="">Arizona</option>
+  <option value="">Florida</option>
+  <option value="">Washington</option>
+  <option value="">Colorado</option>
+  <option value="">Oregon</option>
+   
+</select>
+
+      <div class="container">
+      <h1 class="title">Brewery Shop</h1>
+      <input type="text" id="search" minlength="3" maxlength="16" required />
+      <label for="search">Enter the U.S Brewery State </label>
+      <div class="submit-button">
+        <button class="submit" onclick="nameData()">Submit</button>
+        <button class="submit" value='Clear' onclick="reset()">Clear</button>
+      </div>
+      <div class="row data_area"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
